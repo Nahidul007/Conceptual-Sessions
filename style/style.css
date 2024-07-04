@@ -1,24 +1,49 @@
+ @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 
-
 h1{
-    color: red;
+    color:#32CD32;
     font-size: 60px;
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Azeret Mono", monospace;
     font-style: italic;
-    text-decoration: underline;
+    text-decoration: overline;
     text-align: center;
+    background-position: center;
 }
 
 #parent{
-    background-color: turquoise;
+    
+    background-image: url("../style/image/hero.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
-    width: 600px;
+    /* width: 600px; */
+    max-width: 1100px;
     padding: 100px;
     margin: auto;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+
+}
+
+.btnParent{
+    text-align: center;
+}
+
+.btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 17px;
+    border: 1px solid yellow;
+    border-radius: 7px;
+    font: 18px;
+    margin: 5px;
+    font-family: "Space Grotesk", sans-serif;
+
 }
